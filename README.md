@@ -3,10 +3,12 @@
 Terminal program to parse and split  email into username and domain given certain constraints
 
 ## CONSTRAINTS
-- Usernames will be made up of alphabets or alphanumerics. Ex. `john`, `johndoe`, `john123`. (Username however cannot start with a number)
-- Usernames can also support only the + character in between, not at the end or beginning, for example: `jane+doe`, `j+doe`, etc.
+- Username will be made up of alphabets or alphanumerics. Ex. `john`, `johndoe`, `john123`. 
+- Username however cannot start with a number
+- Username can also support only the + character in between, not at the end or beginning, for example: `jane+doe`, `j+doe`, etc.
 - Domains will always end in .com, Ex. `gmail.com`, `yahoo.com`, `bz2.com`, etc.
-- The part before .com in domains will be made up of alphabets or alphanumerics, Ex. `gmail`, `bz2`, `dom555`, etc. (Domain cannot also start with a number)
+- The part before .com in domains will be made up of alphabets or alphanumerics, Ex. `gmail`, `bz2`, `dom555`, etc. 
+- Domain cannot also start with a number
 
 ## OUTPUT
 For ==> jane+doe@gmail.com, the format below is returned
