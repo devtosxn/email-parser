@@ -31,7 +31,7 @@ For ==> johndoe123@gmail.com, the format below is returned:
 
 ```
 
-For ==> 3janedoe@gmail.com, the format below is returned
+For ==> 3janedoe@gmail.com, +jdoe@bz2.com, james2@gmail.yahoo.com the format below is returned
 ```
 None
 ```
