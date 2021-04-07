@@ -10,8 +10,10 @@ Terminal program to parse and split  email into username and domain given certai
 - The part before .com in domains will be made up of alphabets or alphanumerics, Ex. `gmail`, `bz2`, `dom555`, etc. 
 - Domain cannot also start with a number
 
+`None` will be returned if constraints above are not satisfied
+
 ## OUTPUT
-For ==> jane+doe@gmail.com, the format below is returned
+For ==> jane+doe@gmail.com, the format below is returned:
 ``` 
 {
   'username' : 'jane+doe',
@@ -20,4 +22,18 @@ For ==> jane+doe@gmail.com, the format below is returned
 
 ```
 
-`None` will be returned if constraints above are not satisfied
+For ==> johndoe123@gmail.com, the format below is returned:
+``` 
+{
+  'username' : 'johndoe123',
+  'domain' : 'gmail.com'
+}
+
+```
+
+For ==> 3janedoe@gmail.com, the format below is returned
+```
+None
+```
+
+
